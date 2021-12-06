@@ -46,7 +46,7 @@ async function getBackgroundImg(){
     var response =await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata ")
  
     //change the data in JSON format and store it in variable responseJSON
-    var responseJSON=await response.json()
+    var responseJson=await response.json()
 
     
     //fetch datetime from responseJSON
@@ -54,7 +54,7 @@ async function getBackgroundImg(){
     
 
     // slice the datetime to extract hour
-    var hour = dateTime.slice(11,13)
+    hour = dateTime.slice(11,13)
     console.log(hour)
 
     
